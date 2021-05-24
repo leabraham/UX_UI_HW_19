@@ -20,14 +20,8 @@ body {
     background-color: white;
 }
 
-.logo img{
-    width: 100%;
-    height: auto;
-}
-
 .logo {
-    width: 8%;
-    padding: 1%;
+    margin-left: 1rem;
 }
 
 .navbar-custom {
@@ -101,11 +95,11 @@ nav a:hover {
     color: black;
 }
 
-#about, #skills, #work {
+.about, .skills, .work {
     margin-right: 4rem;
 }
 
-#contact {
+.contact {
     margin-right: 1rem;
 }
 
@@ -139,19 +133,18 @@ nav a:hover {
 }
 
 .intro {
-    display: flex;
-    align-items: center;
-    margin: 6rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
 }
 
-#me img{
+.intro-img {
     width: 100%;
     height: auto;
+    margin-bottom: 9rem;
 }
 
-.intro img {
-    width: 16.5%;
-    margin-right: 1rem;
+.intro-img img{
+    width: 20%;
 }
 
 #me {
@@ -224,6 +217,14 @@ footer li {
     }
 
     .tool-img img {
+        width: 50%;
+    }
+
+    .intro-img img {
+        width: 50%;
+    }
+
+    #resume {
         width: 50%;
     }
 }

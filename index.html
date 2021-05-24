@@ -12,39 +12,38 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+        <script src="js/index.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <a class="navbar-brand" href="/index.html"><img src="images/la-logo.png" class="img-fluid" width="20%"></a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
+            <a class="logo navbar-brand" href="/index.html"><img src="images/la-logo.png" class="img-fluid" width="20%"></a>
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapseTarget" aria-controls="collapse_target" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon navbar-custom"></span>
             </button>
             <div class="collapse justify-content-end navbar-collapse" id="collapseTarget">
-                <ul class="navbar-nav">
-                    <li class="nav-item" id="about"><a class="nav-link" href="#">ABOUT</a></li>
-                    <li class="nav-item" id="skills"><a class="nav-link" href="#">SKILLS</a></li>
-                    <li class="nav-item" id="work"><a class="nav-link" href="#">WORK</a></li>
-                    <li class="nav-item" id="contact"><a class="nav-link" href="#">CONTACT</a></li>
+                <ul id="main-nav" class="navbar-nav">
+                    <li class="about nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="work nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+                    <li class="skills nav-item"><a class="nav-link" href="#work">WORK</a></li>
+                    <li class="contact nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
 
-        <section class="site-content">
-            <div class="intro">
-                <img id="me" src="images/moi.png">
-                <div class="desc">
+        <section id="about" class="container">
+                <div class="intro text-center">
                     <h1>Hi, I'm Leanna Abraham</h1>
-                    <h3>An aspiring UX/UI Designer and Researcher connecting 
-                    people with accessible design</h3>
+                    <h4>An aspiring UX/UI Designer and Researcher connecting 
+                    people with accessible design</h4>
                     <p>I find human interaction fascinating and seek to bridge 
                     the gap between accessibility and technology with user 
                     friendly designs and experiences.</p>
                 </div>
-            </div>
+                <div class="intro-img"><img src="images/moi.png" class="img-fluid mx-auto d-block"></div>
+                <button id="resume">DOWNLOAD RESUME</button>
         </section>
-        <button id="resume">DOWNLOAD RESUME</button>
 
-        <section class="myWork container">
+        <section id="work" class="myWork container">
             <h2 class="text-center projects">My Work</h2>
                 <div class="row projects">
                     <div class="col-sm">
@@ -85,7 +84,7 @@
                 </div>
         </section>
 
-        <section class="myskills container tools-skills">
+        <section id="skills" class="myskills container tools-skills">
             <div>
                 <h2 class="text-center projects">Skills & Tools</h2>
                 <ul class="list-group list-group-flush w-50 mx-auto">
@@ -103,7 +102,7 @@
               </div>
         </section>
 
-        <footer>
+        <footer id="contact">
             <ul>
                 <li><a id="email" href="mailto:leanna.abraham41@gmail.com">EMAIL</a></li>
                 <li><a id="linkedin" href="https://www.linkedin.com/in/leanna-abraham">LINKEDIN</a></li>
